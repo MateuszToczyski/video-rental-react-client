@@ -1,10 +1,20 @@
 import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
-import authReducer from './authReducer';
-import streamReducer from './streamReducer';
+import customerReducer from './customerReducer';
+import groupReducer from './groupReducer';
+import categoryReducer from './categoryReducer';
+import videoReducer from './videoReducer';
+import imdbReducer from './imdbReducer';
+import copyReducer from './copyReducer';
+import rentalReducer from './rentalReducer';
+import errorReducer from './errorReducer';
 
 export default combineReducers({
-  auth: authReducer,
-  form: formReducer,
-  streams: streamReducer
+  customers: customerReducer,
+  groups: groupReducer,
+  categories: categoryReducer,
+  videos: videoReducer,
+  imdbVideo: imdbReducer,
+  copy: copyReducer,
+  rental: rentalReducer,
+  error: errorReducer
 });
